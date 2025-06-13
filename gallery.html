@@ -1,531 +1,722 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gallery - SaveEarth</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <i class="fas fa-globe-americas"></i>
-                <span>SaveEarth</span>
-            </div>
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="causes.html" class="nav-link">Causes</a></li>
-                <li><a href="consequences.html" class="nav-link">Impact</a></li>
-                <li><a href="solutions.html" class="nav-link">Solutions</a></li>
-                <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="nav-toggle" id="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+      <div class="nav-container">
+        <div class="nav-logo">
+          <i class="fas fa-globe-americas"></i>
+          <span>SaveEarth</span>
         </div>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="causes.html" class="nav-link">Causes</a></li>
+          <li><a href="consequences.html" class="nav-link">Impact</a></li>
+          <li><a href="solutions.html" class="nav-link">Solutions</a></li>
+          <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-toggle" id="nav-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
     </nav>
 
     <!-- Page Header -->
     <header class="page-header">
-        <div class="page-header-bg gallery-bg"></div>
-        <div class="container">
-            <div class="page-header-content">
-                <h1 class="page-title animate-fade-in">Visual Stories</h1>
-                <p class="page-subtitle animate-fade-in-delay-1">Documenting Environmental Change & Conservation Efforts</p>
-            </div>
+      <div class="page-header-bg gallery-bg"></div>
+      <div class="container">
+        <div class="page-header-content">
+          <h1 class="page-title animate-fade-in">Visual Stories</h1>
+          <p class="page-subtitle animate-fade-in-delay-1">
+            Documenting Environmental Change & Conservation Efforts
+          </p>
         </div>
+      </div>
     </header>
 
     <!-- Gallery Filter -->
     <section class="gallery-filter-section">
-        <div class="container">
-            <div class="filter-controls animate-on-scroll">
-                <button class="filter-btn active" data-filter="all">All Images</button>
-                <button class="filter-btn" data-filter="before-after">Before & After</button>
-                <button class="filter-btn" data-filter="conservation">Conservation</button>
-                <button class="filter-btn" data-filter="wildlife">Wildlife</button>
-                <button class="filter-btn" data-filter="activism">Activism</button>
-            </div>
+      <div class="container">
+        <div class="filter-controls animate-on-scroll">
+          <button class="filter-btn active" data-filter="all">
+            All Images
+          </button>
+          <button class="filter-btn" data-filter="before-after">
+            Before & After
+          </button>
+          <button class="filter-btn" data-filter="conservation">
+            Conservation
+          </button>
+          <button class="filter-btn" data-filter="wildlife">Wildlife</button>
+          <button class="filter-btn" data-filter="activism">Activism</button>
         </div>
+      </div>
     </section>
 
     <!-- Before & After Section -->
     <section class="gallery-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title animate-on-scroll">Before & After: The Reality of Environmental Destruction</h2>
-                <p class="section-subtitle animate-on-scroll">Powerful comparisons showing the dramatic changes to our planet over time</p>
-            </div>
-
-            <div class="before-after-grid">
-                <div class="comparison-card animate-on-scroll" data-category="before-after">
-                    <div class="comparison-header">
-                        <h3>Amazon Rainforest - Brazil</h3>
-                        <span class="time-range">1985 vs 2024</span>
-                    </div>
-                    <div class="comparison-images">
-                        <div class="comparison-item">
-                            <img src="https://images.pexels.com/photos/975771/pexels-photo-975771.jpeg" alt="Amazon forest before">
-                            <div class="image-label before">1985 - Dense Forest</div>
-                        </div>
-                        <div class="comparison-divider">
-                            <i class="fas fa-arrows-alt-h"></i>
-                        </div>
-                        <div class="comparison-item">
-                            <img src="https://images.pexels.com/photos/886521/pexels-photo-886521.jpeg" alt="Amazon deforestation">
-                            <div class="image-label after">2024 - Deforested Land</div>
-                        </div>
-                    </div>
-                    <div class="comparison-stats">
-                        <div class="stat-item">
-                            <span class="stat-value">17%</span>
-                            <span class="stat-label">of Amazon lost in 50 years</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-value">780,000 km²</span>
-                            <span class="stat-label">area destroyed (size of Turkey)</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="comparison-card animate-on-scroll" data-category="before-after">
-                    <div class="comparison-header">
-                        <h3>Aral Sea - Kazakhstan/Uzbekistan</h3>
-                        <span class="time-range">1960 vs 2024</span>
-                    </div>
-                    <div class="comparison-images">
-                        <div class="comparison-item">
-                            <img src="https://images.pexels.com/photos/1108728/pexels-photo-1108728.jpeg" alt="Aral Sea before">
-                            <div class="image-label before">1960 - World's 4th Largest Lake</div>
-                        </div>
-                        <div class="comparison-divider">
-                            <i class="fas fa-arrows-alt-h"></i>
-                        </div>
-                        <div class="comparison-item">
-                            <img src="https://images.pexels.com/photos/60013/desert-drought-dehydrated-clay-60013.jpeg" alt="Aral Sea dried">
-                            <div class="image-label after">2024 - 10% Remaining</div>
-                        </div>
-                    </div>
-                    <div class="comparison-stats">
-                        <div class="stat-item">
-                            <span class="stat-value">90%</span>
-                            <span class="stat-label">of water volume lost</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-value">60,000 km²</span>
-                            <span class="stat-label">of water became desert</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="comparison-card animate-on-scroll" data-category="before-after">
-                    <div class="comparison-header">
-                        <h3>Borneo Rainforest - Indonesia</h3>
-                        <span class="time-range">1990 vs 2024</span>
-                    </div>
-                    <div class="comparison-images">
-                        <div class="comparison-item">
-                            <img src="https://images.pexels.com/photos/1108701/pexels-photo-1108701.jpeg" alt="Borneo forest">
-                            <div class="image-label before">1990 - Pristine Rainforest</div>
-                        </div>
-                        <div class="comparison-divider">
-                            <i class="fas fa-arrows-alt-h"></i>
-                        </div>
-                        <div class="comparison-item">
-                            <img src="https://images.pexels.com/photos/1595104/pexels-photo-1595104.jpeg" alt="Palm oil plantation">
-                            <div class="image-label after">2024 - Palm Oil Plantations</div>
-                        </div>
-                    </div>
-                    <div class="comparison-stats">
-                        <div class="stat-item">
-                            <span class="stat-value">50%</span>
-                            <span class="stat-label">of forest lost to palm oil</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-value">104,000</span>
-                            <span class="stat-label">orangutans remaining</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title animate-on-scroll">
+            Before & After: The Reality of Environmental Destruction
+          </h2>
+          <p class="section-subtitle animate-on-scroll">
+            Powerful comparisons showing the dramatic changes to our planet over
+            time
+          </p>
         </div>
+
+        <div class="before-after-grid">
+          <div
+            class="comparison-card animate-on-scroll"
+            data-category="before-after"
+          >
+            <div class="comparison-header">
+              <h3>Amazon Rainforest - Brazil</h3>
+              <span class="time-range">1985 vs 2024</span>
+            </div>
+            <div class="comparison-images">
+              <div class="comparison-item">
+                <img
+                  src="https://images.pexels.com/photos/975771/pexels-photo-975771.jpeg"
+                  alt="Amazon forest before"
+                />
+                <div class="image-label before">1985 - Dense Forest</div>
+              </div>
+              <div class="comparison-divider">
+                <i class="fas fa-arrows-alt-h"></i>
+              </div>
+              <div class="comparison-item">
+                <img
+                  src="https://images.pexels.com/photos/886521/pexels-photo-886521.jpeg"
+                  alt="Amazon deforestation"
+                />
+                <div class="image-label after">2024 - Deforested Land</div>
+              </div>
+            </div>
+            <div class="comparison-stats">
+              <div class="stat-item">
+                <span class="stat-value">17%</span>
+                <span class="stat-label">of Amazon lost in 50 years</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-value">780,000 km²</span>
+                <span class="stat-label">area destroyed (size of Turkey)</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="comparison-card animate-on-scroll"
+            data-category="before-after"
+          >
+            <div class="comparison-header">
+              <h3>Aral Sea - Kazakhstan/Uzbekistan</h3>
+              <span class="time-range">1960 vs 2024</span>
+            </div>
+            <div class="comparison-images">
+              <div class="comparison-item">
+                <img
+                  src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg"
+                  alt="Aral Sea before"
+                />
+                <div class="image-label before">
+                  1960 - World's 4th Largest Lake
+                </div>
+              </div>
+              <div class="comparison-divider">
+                <i class="fas fa-arrows-alt-h"></i>
+              </div>
+              <div class="comparison-item">
+                <img
+                  src="https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg"
+                  alt="Aral Sea dried"
+                />
+                <div class="image-label after">2024 - 10% Remaining</div>
+              </div>
+            </div>
+            <div class="comparison-stats">
+              <div class="stat-item">
+                <span class="stat-value">90%</span>
+                <span class="stat-label">of water volume lost</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-value">60,000 km²</span>
+                <span class="stat-label">of water became desert</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="comparison-card animate-on-scroll"
+            data-category="before-after"
+          >
+            <div class="comparison-header">
+              <h3>Borneo Rainforest - Indonesia</h3>
+              <span class="time-range">1990 vs 2024</span>
+            </div>
+            <div class="comparison-images">
+              <div class="comparison-item">
+                <img
+                  src="https://images.pexels.com/photos/1108701/pexels-photo-1108701.jpeg"
+                  alt="Borneo forest"
+                />
+                <div class="image-label before">1990 - Pristine Rainforest</div>
+              </div>
+              <div class="comparison-divider">
+                <i class="fas fa-arrows-alt-h"></i>
+              </div>
+              <div class="comparison-item">
+                <img
+                  src="https://images.pexels.com/photos/1595104/pexels-photo-1595104.jpeg"
+                  alt="Palm oil plantation"
+                />
+                <div class="image-label after">2024 - Palm Oil Plantations</div>
+              </div>
+            </div>
+            <div class="comparison-stats">
+              <div class="stat-item">
+                <span class="stat-value">50%</span>
+                <span class="stat-label">of forest lost to palm oil</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-value">104,000</span>
+                <span class="stat-label">orangutans remaining</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Conservation Success Stories -->
     <section class="gallery-section alt-bg">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title animate-on-scroll">Conservation Success Stories</h2>
-                <p class="section-subtitle animate-on-scroll">Inspiring examples of restoration and protection efforts worldwide</p>
-            </div>
-
-            <div class="success-gallery">
-                <div class="success-card animate-on-scroll" data-category="conservation">
-                    <div class="success-image">
-                        <img src="https://images.pexels.com/photos/1179229/pexels-photo-1179229.jpeg" alt="Reforestation project">
-                        <div class="success-overlay">
-                            <div class="success-info">
-                                <h3>Costa Rica Forest Recovery</h3>
-                                <p>From 17% to 54% forest cover in 30 years</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="success-card animate-on-scroll" data-category="conservation">
-                    <div class="success-image">
-                        <img src="https://images.pexels.com/photos/1632790/pexels-photo-1632790.jpeg" alt="Tree planting">
-                        <div class="success-overlay">
-                            <div class="success-info">
-                                <h3>Great Green Wall Project</h3>
-                                <p>8,000 km of trees across Africa</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="success-card animate-on-scroll" data-category="conservation">
-                    <div class="success-image">
-                        <img src="https://images.pexels.com/photos/957024/forest-trees-perspective-bright-957024.jpeg" alt="Protected forest">
-                        <div class="success-overlay">
-                            <div class="success-info">
-                                <h3>Yellowstone Protection</h3>
-                                <p>Wolf reintroduction restored ecosystem</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="success-card animate-on-scroll" data-category="conservation">
-                    <div class="success-image">
-                        <img src="https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg" alt="Restored landscape">
-                        <div class="success-overlay">
-                            <div class="success-info">
-                                <h3>Sahel Restoration</h3>
-                                <p>5 million hectares restored in Niger</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title animate-on-scroll">
+            Conservation Success Stories
+          </h2>
+          <p class="section-subtitle animate-on-scroll">
+            Inspiring examples of restoration and protection efforts worldwide
+          </p>
         </div>
+
+        <div class="success-gallery">
+          <div
+            class="success-card animate-on-scroll"
+            data-category="conservation"
+          >
+            <div class="success-image">
+              <img
+                src="https://images.pexels.com/photos/1179229/pexels-photo-1179229.jpeg"
+                alt="Reforestation project"
+              />
+              <div class="success-overlay">
+                <div class="success-info">
+                  <h3>Costa Rica Forest Recovery</h3>
+                  <p>From 17% to 54% forest cover in 30 years</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="success-card animate-on-scroll"
+            data-category="conservation"
+          >
+            <div class="success-image">
+              <img
+                src="https://images.pexels.com/photos/1632790/pexels-photo-1632790.jpeg"
+                alt="Tree planting"
+              />
+              <div class="success-overlay">
+                <div class="success-info">
+                  <h3>Great Green Wall Project</h3>
+                  <p>8,000 km of trees across Africa</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="success-card animate-on-scroll"
+            data-category="conservation"
+          >
+            <div class="success-image">
+              <img
+                src="https://images.pexels.com/photos/957024/forest-trees-perspective-bright-957024.jpeg"
+                alt="Protected forest"
+              />
+              <div class="success-overlay">
+                <div class="success-info">
+                  <h3>Yellowstone Protection</h3>
+                  <p>Wolf reintroduction restored ecosystem</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="success-card animate-on-scroll"
+            data-category="conservation"
+          >
+            <div class="success-image">
+              <img
+                src="https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg"
+                alt="Restored landscape"
+              />
+              <div class="success-overlay">
+                <div class="success-info">
+                  <h3>Sahel Restoration</h3>
+                  <p>5 million hectares restored in Niger</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Wildlife Protection -->
     <section class="gallery-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title animate-on-scroll">Wildlife Under Threat</h2>
-                <p class="section-subtitle animate-on-scroll">Documenting species affected by habitat loss and climate change</p>
-            </div>
-
-            <div class="wildlife-gallery">
-                <div class="wildlife-grid">
-                    <div class="wildlife-item animate-on-scroll" data-category="wildlife">
-                        <div class="wildlife-image">
-                            <img src="https://images.pexels.com/photos/16781525/pexels-photo-16781525.jpeg" alt="Orangutan">
-                        </div>
-                        <div class="wildlife-info">
-                            <h3>Bornean Orangutan</h3>
-                            <div class="threat-status critical">Critically Endangered</div>
-                            <p>Only 104,000 remaining in the wild. Habitat destroyed by palm oil plantations.</p>
-                        </div>
-                    </div>
-
-                    <div class="wildlife-item animate-on-scroll" data-category="wildlife">
-                        <div class="wildlife-image">
-                            <img src="https://images.pexels.com/photos/416979/pexels-photo-416979.jpeg" alt="Tiger">
-                        </div>
-                        <div class="wildlife-info">
-                            <h3>Bengal Tiger</h3>
-                            <div class="threat-status endangered">Endangered</div>
-                            <p>Population reduced from 100,000 to 3,900 in just 100 years.</p>
-                        </div>
-                    </div>
-
-                    <div class="wildlife-item animate-on-scroll" data-category="wildlife">
-                        <div class="wildlife-image">
-                            <img src="https://images.pexels.com/photos/289235/pexels-photo-289235.jpeg" alt="Jaguar">
-                        </div>
-                        <div class="wildlife-info">
-                            <h3>Jaguar</h3>
-                            <div class="threat-status vulnerable">Near Threatened</div>
-                            <p>Lost 25% of territory in 25 years due to Amazon deforestation.</p>
-                        </div>
-                    </div>
-
-                    <div class="wildlife-item animate-on-scroll" data-category="wildlife">
-                        <div class="wildlife-image">
-                            <img src="https://images.pexels.com/photos/792606/pexels-photo-792606.jpeg" alt="Elephant">
-                        </div>
-                        <div class="wildlife-info">
-                            <h3>African Elephant</h3>
-                            <div class="threat-status endangered">Endangered</div>
-                            <p>Population declined 60% in the last decade due to habitat loss.</p>
-                        </div>
-                    </div>
-
-                    <div class="wildlife-item animate-on-scroll" data-category="wildlife">
-                        <div class="wildlife-image">
-                            <img src="https://images.pexels.com/photos/551653/pexels-photo-551653.jpeg" alt="Fish">
-                        </div>
-                        <div class="wildlife-info">
-                            <h3>Freshwater Fish</h3>
-                            <div class="threat-status critical">Massive Decline</div>
-                            <p>84% population decline since 1970 due to water pollution and habitat loss.</p>
-                        </div>
-                    </div>
-
-                    <div class="wildlife-item animate-on-scroll" data-category="wildlife">
-                        <div class="wildlife-image">
-                            <img src="https://images.pexels.com/photos/1108572/pexels-photo-1108572.jpeg" alt="Polar bear">
-                        </div>
-                        <div class="wildlife-info">
-                            <h3>Polar Bear</h3>
-                            <div class="threat-status vulnerable">Vulnerable</div>
-                            <p>Arctic ice habitat shrinking by 13% per decade due to climate change.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title animate-on-scroll">Wildlife Under Threat</h2>
+          <p class="section-subtitle animate-on-scroll">
+            Documenting species affected by habitat loss and climate change
+          </p>
         </div>
+
+        <div class="wildlife-gallery">
+          <div class="wildlife-grid">
+            <div
+              class="wildlife-item animate-on-scroll"
+              data-category="wildlife"
+            >
+              <div class="wildlife-image">
+                <img
+                  src="https://images.pexels.com/photos/1108715/pexels-photo-1108715.jpeg"
+                  alt="Orangutan"
+                />
+              </div>
+              <div class="wildlife-info">
+                <h3>Bornean Orangutan</h3>
+                <div class="threat-status critical">Critically Endangered</div>
+                <p>
+                  Only 104,000 remaining in the wild. Habitat destroyed by palm
+                  oil plantations.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="wildlife-item animate-on-scroll"
+              data-category="wildlife"
+            >
+              <div class="wildlife-image">
+                <img
+                  src="https://images.pexels.com/photos/792381/pexels-photo-792381.jpeg"
+                  alt="Tiger"
+                />
+              </div>
+              <div class="wildlife-info">
+                <h3>Bengal Tiger</h3>
+                <div class="threat-status endangered">Endangered</div>
+                <p>
+                  Population reduced from 100,000 to 3,900 in just 100 years.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="wildlife-item animate-on-scroll"
+              data-category="wildlife"
+            >
+              <div class="wildlife-image">
+                <img
+                  src="https://images.pexels.com/photos/158471/ibis-bird-red-animals-158471.jpeg"
+                  alt="Jaguar"
+                />
+              </div>
+              <div class="wildlife-info">
+                <h3>Jaguar</h3>
+                <div class="threat-status vulnerable">Near Threatened</div>
+                <p>
+                  Lost 25% of territory in 25 years due to Amazon deforestation.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="wildlife-item animate-on-scroll"
+              data-category="wildlife"
+            >
+              <div class="wildlife-image">
+                <img
+                  src="https://images.pexels.com/photos/66898/elephant-cub-tsavo-kenya-66898.jpeg"
+                  alt="Elephant"
+                />
+              </div>
+              <div class="wildlife-info">
+                <h3>African Elephant</h3>
+                <div class="threat-status endangered">Endangered</div>
+                <p>
+                  Population declined 60% in the last decade due to habitat
+                  loss.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="wildlife-item animate-on-scroll"
+              data-category="wildlife"
+            >
+              <div class="wildlife-image">
+                <img
+                  src="https://images.pexels.com/photos/1108841/pexels-photo-1108841.jpeg"
+                  alt="Fish"
+                />
+              </div>
+              <div class="wildlife-info">
+                <h3>Freshwater Fish</h3>
+                <div class="threat-status critical">Massive Decline</div>
+                <p>
+                  84% population decline since 1970 due to water pollution and
+                  habitat loss.
+                </p>
+              </div>
+            </div>
+            <div
+              class="wildlife-item animate-on-scroll"
+              data-category="wildlife"
+            >
+              <div class="wildlife-image">
+                <img
+                  src="https://images.pexels.com/photos/975771/pexels-photo-975771.jpeg"
+                  alt="Polar Bear"
+                />
+              </div>
+              <div class="wildlife-info">
+                <h3>Polar Bear</h3>
+                <div class="threat-status vulnerable">Vulnerable</div>
+                <p>
+                  Arctic ice habitat shrinking by 13% per decade due to climate
+                  change.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Activism & Awareness -->
     <section class="gallery-section alt-bg">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title animate-on-scroll">Voices for Change</h2>
-                <p class="section-subtitle animate-on-scroll">People around the world taking action to protect our environment</p>
-            </div>
-
-            <div class="activism-gallery">
-                <div class="activism-grid">
-                    <div class="activism-item animate-on-scroll" data-category="activism">
-                        <div class="activism-image">
-                            <img src="https://images.pexels.com/photos/2393793/pexels-photo-2393793.jpeg" alt="Environmental protest">
-                        </div>
-                        <div class="activism-info">
-                            <h3>Global Climate Strike</h3>
-                            <p>Millions of young people demanding action on climate change worldwide</p>
-                        </div>
-                    </div>
-
-                    <div class="activism-item animate-on-scroll" data-category="activism">
-                        <div class="activism-image">
-                            <img src="https://images.pexels.com/photos/1078981/pexels-photo-1078981.jpeg" alt="Indigenous activists">
-                        </div>
-                        <div class="activism-info">
-                            <h3>Indigenous Land Defenders</h3>
-                            <p>Indigenous communities protecting 80% of the world's biodiversity</p>
-                        </div>
-                    </div>
-
-                    <div class="activism-item animate-on-scroll" data-category="activism">
-                        <div class="activism-image">
-                            <img src="https://images.pexels.com/photos/2382894/pexels-photo-2382894.jpeg" alt="Volunteers planting">
-                        </div>
-                        <div class="activism-info">
-                            <h3>Community Reforestation</h3>
-                            <p>Local volunteers planting millions of trees in restoration projects</p>
-                        </div>
-                    </div>
-
-                    <div class="activism-item animate-on-scroll" data-category="activism">
-                        <div class="activism-image">
-                            <img src="https://images.pexels.com/photos/1108728/pexels-photo-1108728.jpeg" alt="Water conservation">
-                        </div>
-                        <div class="activism-info">
-                            <h3>Water Conservation Programs</h3>
-                            <p>Communities implementing sustainable water management practices</p>
-                        </div>
-                    </div>
-
-                    <div class="activism-item animate-on-scroll" data-category="activism">
-                        <div class="activism-image">
-                            <img src="https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg" alt="Urban conservation">
-                        </div>
-                        <div class="activism-info">
-                            <h3>Urban Green Initiatives</h3>
-                            <p>Cities creating green spaces and sustainable infrastructure</p>
-                        </div>
-                    </div>
-
-                    <div class="activism-item animate-on-scroll" data-category="activism">
-                        <div class="activism-image">
-                            <img src="https://images.pexels.com/photos/1670720/pexels-photo-1670720.jpeg" alt="Environmental education">
-                        </div>
-                        <div class="activism-info">
-                            <h3>Environmental Education</h3>
-                            <p>Teaching next generation about conservation and sustainability</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title animate-on-scroll">Voices for Change</h2>
+          <p class="section-subtitle animate-on-scroll">
+            People around the world taking action to protect our environment
+          </p>
         </div>
+
+        <div class="activism-gallery">
+          <div class="activism-grid">
+            <div
+              class="activism-item animate-on-scroll"
+              data-category="activism"
+            >
+              <div class="activism-image">
+                <img
+                  src="https://images.pexels.com/photos/2393793/pexels-photo-2393793.jpeg"
+                  alt="Environmental protest"
+                />
+              </div>
+              <div class="activism-info">
+                <h3>Global Climate Strike</h3>
+                <p>
+                  Millions of young people demanding action on climate change
+                  worldwide
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="activism-item animate-on-scroll"
+              data-category="activism"
+            >
+              <div class="activism-image">
+                <img
+                  src="https://images.pexels.com/photos/1078981/pexels-photo-1078981.jpeg"
+                  alt="Indigenous activists"
+                />
+              </div>
+              <div class="activism-info">
+                <h3>Indigenous Land Defenders</h3>
+                <p>
+                  Indigenous communities protecting 80% of the world's
+                  biodiversity
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="activism-item animate-on-scroll"
+              data-category="activism"
+            >
+              <div class="activism-image">
+                <img
+                  src="https://images.pexels.com/photos/2382894/pexels-photo-2382894.jpeg"
+                  alt="Volunteers planting"
+                />
+              </div>
+              <div class="activism-info">
+                <h3>Community Reforestation</h3>
+                <p>
+                  Local volunteers planting millions of trees in restoration
+                  projects
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="activism-item animate-on-scroll"
+              data-category="activism"
+            >
+              <div class="activism-image">
+                <img
+                  src="https://images.pexels.com/photos/1108728/pexels-photo-1108728.jpeg"
+                  alt="Water conservation"
+                />
+              </div>
+              <div class="activism-info">
+                <h3>Water Conservation Programs</h3>
+                <p>
+                  Communities implementing sustainable water management
+                  practices
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="activism-item animate-on-scroll"
+              data-category="activism"
+            >
+              <div class="activism-image">
+                <img
+                  src="https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg"
+                  alt="Urban conservation"
+                />
+              </div>
+              <div class="activism-info">
+                <h3>Urban Green Initiatives</h3>
+                <p>
+                  Cities creating green spaces and sustainable infrastructure
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="activism-item animate-on-scroll"
+              data-category="activism"
+            >
+              <div class="activism-image">
+                <img
+                  src="https://images.pexels.com/photos/1670720/pexels-photo-1670720.jpeg"
+                  alt="Environmental education"
+                />
+              </div>
+              <div class="activism-info">
+                <h3>Environmental Education</h3>
+                <p>
+                  Teaching next generation about conservation and sustainability
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Infographics Section -->
     <section class="gallery-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title animate-on-scroll">Data Visualizations</h2>
-                <p class="section-subtitle animate-on-scroll">Understanding the scale of environmental challenges through data</p>
-            </div>
-
-            <div class="infographic-grid">
-                <div class="infographic-card animate-on-scroll">
-                    <h3>Water Footprint of Common Foods</h3>
-                    <div class="infographic-content">
-                        <div class="water-usage-chart">
-                            <div class="usage-item">
-                                <div class="usage-bar" style="width: 100%"></div>
-                                <span class="usage-label">Beef: 15,000L per kg</span>
-                            </div>
-                            <div class="usage-item">
-                                <div class="usage-bar" style="width: 40%"></div>
-                                <span class="usage-label">Pork: 6,000L per kg</span>
-                            </div>
-                            <div class="usage-item">
-                                <div class="usage-bar" style="width: 27%"></div>
-                                <span class="usage-label">Chicken: 4,000L per kg</span>
-                            </div>
-                            <div class="usage-item">
-                                <div class="usage-bar" style="width: 13%"></div>
-                                <span class="usage-label">Rice: 2,000L per kg</span>
-                            </div>
-                            <div class="usage-item">
-                                <div class="usage-bar" style="width: 7%"></div>
-                                <span class="usage-label">Vegetables: 1,000L per kg</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="infographic-card animate-on-scroll">
-                    <h3>Deforestation by Country (2020-2024)</h3>
-                    <div class="infographic-content">
-                        <div class="deforestation-chart">
-                            <div class="chart-item">
-                                <span class="country">Brazil</span>
-                                <div class="chart-bar" style="width: 100%"></div>
-                                <span class="value">1.5M hectares/year</span>
-                            </div>
-                            <div class="chart-item">
-                                <span class="country">Indonesia</span>
-                                <div class="chart-bar" style="width: 40%"></div>
-                                <span class="value">600K hectares/year</span>
-                            </div>
-                            <div class="chart-item">
-                                <span class="country">DRC</span>
-                                <div class="chart-bar" style="width: 33%"></div>
-                                <span class="value">500K hectares/year</span>
-                            </div>
-                            <div class="chart-item">
-                                <span class="country">Bolivia</span>
-                                <div class="chart-bar" style="width: 20%"></div>
-                                <span class="value">300K hectares/year</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="infographic-card animate-on-scroll">
-                    <h3>Water Scarcity by Region</h3>
-                    <div class="infographic-content">
-                        <div class="scarcity-map">
-                            <div class="region-item critical">
-                                <span class="region-name">Middle East & North Africa</span>
-                                <span class="scarcity-level">Extremely High Stress</span>
-                            </div>
-                            <div class="region-item high">
-                                <span class="region-name">South Asia</span>
-                                <span class="scarcity-level">High Stress</span>
-                            </div>
-                            <div class="region-item medium">
-                                <span class="region-name">Sub-Saharan Africa</span>
-                                <span class="scarcity-level">Medium-High Stress</span>
-                            </div>
-                            <div class="region-item low">
-                                <span class="region-name">North America</span>
-                                <span class="scarcity-level">Low-Medium Stress</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title animate-on-scroll">Data Visualizations</h2>
+          <p class="section-subtitle animate-on-scroll">
+            Understanding the scale of environmental challenges through data
+          </p>
         </div>
+
+        <div class="infographic-grid">
+          <div class="infographic-card animate-on-scroll">
+            <h3>Water Footprint of Common Foods</h3>
+            <div class="infographic-content">
+              <div class="water-usage-chart">
+                <div class="usage-item">
+                  <div class="usage-bar" style="width: 100%"></div>
+                  <span class="usage-label">Beef: 15,000L per kg</span>
+                </div>
+                <div class="usage-item">
+                  <div class="usage-bar" style="width: 40%"></div>
+                  <span class="usage-label">Pork: 6,000L per kg</span>
+                </div>
+                <div class="usage-item">
+                  <div class="usage-bar" style="width: 27%"></div>
+                  <span class="usage-label">Chicken: 4,000L per kg</span>
+                </div>
+                <div class="usage-item">
+                  <div class="usage-bar" style="width: 13%"></div>
+                  <span class="usage-label">Rice: 2,000L per kg</span>
+                </div>
+                <div class="usage-item">
+                  <div class="usage-bar" style="width: 7%"></div>
+                  <span class="usage-label">Vegetables: 1,000L per kg</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="infographic-card animate-on-scroll">
+            <h3>Deforestation by Country (2020-2024)</h3>
+            <div class="infographic-content">
+              <div class="deforestation-chart">
+                <div class="chart-item">
+                  <span class="country">Brazil</span>
+                  <div class="chart-bar" style="width: 100%"></div>
+                  <span class="value">1.5M hectares/year</span>
+                </div>
+                <div class="chart-item">
+                  <span class="country">Indonesia</span>
+                  <div class="chart-bar" style="width: 40%"></div>
+                  <span class="value">600K hectares/year</span>
+                </div>
+                <div class="chart-item">
+                  <span class="country">DRC</span>
+                  <div class="chart-bar" style="width: 33%"></div>
+                  <span class="value">500K hectares/year</span>
+                </div>
+                <div class="chart-item">
+                  <span class="country">Bolivia</span>
+                  <div class="chart-bar" style="width: 20%"></div>
+                  <span class="value">300K hectares/year</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="infographic-card animate-on-scroll">
+            <h3>Water Scarcity by Region</h3>
+            <div class="infographic-content">
+              <div class="scarcity-map">
+                <div class="region-item critical">
+                  <span class="region-name">Middle East & North Africa</span>
+                  <span class="scarcity-level">Extremely High Stress</span>
+                </div>
+                <div class="region-item high">
+                  <span class="region-name">South Asia</span>
+                  <span class="scarcity-level">High Stress</span>
+                </div>
+                <div class="region-item medium">
+                  <span class="region-name">Sub-Saharan Africa</span>
+                  <span class="scarcity-level">Medium-High Stress</span>
+                </div>
+                <div class="region-item low">
+                  <span class="region-name">North America</span>
+                  <span class="scarcity-level">Low-Medium Stress</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Image Modal -->
     <div class="image-modal" id="imageModal">
-        <div class="modal-content">
-            <span class="modal-close">&times;</span>
-            <img class="modal-image" id="modalImage" src="" alt="">
-            <div class="modal-caption" id="modalCaption"></div>
-        </div>
+      <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <img class="modal-image" id="modalImage" src="" alt="" />
+        <div class="modal-caption" id="modalCaption"></div>
+      </div>
     </div>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <i class="fas fa-globe-americas"></i>
-                        <span>SaveEarth</span>
-                    </div>
-                    <p>Fighting water scarcity and deforestation to protect our planet for future generations.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                    </div>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="about.html">About the Issue</a></li>
-                        <li><a href="causes.html">Causes</a></li>
-                        <li><a href="consequences.html">Impact</a></li>
-                        <li><a href="solutions.html">Solutions</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Get Involved</h3>
-                    <ul>
-                        <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="#">Donate</a></li>
-                        <li><a href="#">Volunteer</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Contact</h3>
-                    <p><i class="fas fa-envelope"></i> contact@saveearth.org</p>
-                    <p><i class="fas fa-phone"></i> +1 (800) 123-4567</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Global Initiative</p>
-                </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <i class="fas fa-globe-americas"></i>
+              <span>SaveEarth</span>
             </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2024 SaveEarth. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            <p>
+              Fighting water scarcity and deforestation to protect our planet
+              for future generations.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
             </div>
+          </div>
+
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="about.html">About the Issue</a></li>
+              <li><a href="causes.html">Causes</a></li>
+              <li><a href="consequences.html">Impact</a></li>
+              <li><a href="solutions.html">Solutions</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Get Involved</h3>
+            <ul>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="#">Donate</a></li>
+              <li><a href="#">Volunteer</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Contact</h3>
+            <p><i class="fas fa-envelope"></i> contact@saveearth.org</p>
+            <p><i class="fas fa-phone"></i> +1 (800) 123-4567</p>
+            <p><i class="fas fa-map-marker-alt"></i> Global Initiative</p>
+          </div>
         </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2024 SaveEarth. All rights reserved. |
+            <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+          </p>
+        </div>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
