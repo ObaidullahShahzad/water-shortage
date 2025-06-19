@@ -2881,7 +2881,48 @@ p {
   border-color: #2563eb;
   box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
 }
+/* Footer Team Credits */
+.team-credits {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
 
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.member-name {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.member-roll {
+  font-size: 0.9rem;
+  color: #cccccc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .team-credits {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-member {
+    font-size: 0.85rem;
+  }
+  .member-roll {
+    font-size: 0.8rem;
+  }
+}
 .form-group textarea {
   resize: vertical;
   min-height: 120px;
